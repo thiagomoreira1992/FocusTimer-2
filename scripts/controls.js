@@ -120,9 +120,12 @@ export default function Controls({
     }
 
     function volumeSound1(input){
-        console.log(input)
-        sounds.forest.volume(input);
+        sounds.forest.volume= input;
+        sounds.rain.volume= input;
+        sounds.coffe.volume= input;
+        sounds.fireplace.volume= input;
     }
+    
 
     return {
         play,
