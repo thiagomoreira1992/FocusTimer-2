@@ -38,6 +38,7 @@ export default function Timer({displayMinutes, displaySeconds}) {
                 controls.resetControls();
                 updateDisplay();
                 sound.timeEnd();
+                navigator.vibrate(200, 250, 300, 200, 250, 300);
                 return;
             }
 
