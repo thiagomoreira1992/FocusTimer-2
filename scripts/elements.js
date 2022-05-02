@@ -11,7 +11,7 @@ const buttonSound2 = document.querySelector('.sound2');
 const buttonSound3 = document.querySelector('.sound3');
 const buttonSound4 = document.querySelector('.sound4');
 
-const rangeSound1 = document.querySelector('volume1');
+const rangeSound = document.getElementById('volume');
 
 
 export {
@@ -26,5 +26,5 @@ export {
     buttonSound2,
     buttonSound3,
     buttonSound4,
-    rangeSound1
+    rangeSound
 }
