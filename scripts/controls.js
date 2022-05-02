@@ -28,6 +28,11 @@ export default function Controls({
         buttonPlay.classList.remove('hide');
     }
 
+    function resetControls(){
+        buttonPause.classList.add('hide');
+        buttonPlay.classList.remove('hide');
+    }
+
     function increment() {
         if (displayMinutes.textContent >= 5) {
             timer.updateMinutes(String(Number(displayMinutes.textContent) + 5).padStart(2, '0'));
@@ -131,6 +136,7 @@ export default function Controls({
         play,
         pause,
         stop,
+        resetControls,
         increment,
         decrement,
         sound1,
