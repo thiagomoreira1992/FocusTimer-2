@@ -16,12 +16,14 @@ export default function(){
 
     fireplace.loop = true;
 
+    const finalBeep = new Audio("https://github.com/maykbrito/automatic-video-creator/blob/master/audios/kichen-timer.mp3?raw=true");
 
     return{
         forest,
         rain,
         coffe,
-        fireplace
+        fireplace,
+        finalBeep
     }
 
 
