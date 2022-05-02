@@ -1,5 +1,11 @@
 import { displayMinutes, displaySeconds } from "./elements.js";
-import Sounds from "./sounds.js"
+import Sounds from './sounds.js'
+import Controls from "./controls.js";
+import { buttonPlay, buttonPause } from "./elements.js";
+
+const controls = Controls({buttonPlay, buttonPause})
+
+const sound = Sounds();
 
 export default function Timer({displayMinutes, displaySeconds}) {
 
@@ -29,14 +35,15 @@ export default function Timer({displayMinutes, displaySeconds}) {
 
             if(finished){
                 reset();
+                controls.resetControls();
                 updateDisplay();
-                Sounds().timeEnd();
+                sound.timeEnd();
                 return;
             }
 
             if(seconds <= 0 )
             {
-                seconds = 60;
+                seconds = 2;
                 --minutes;
             }
 
