@@ -33,7 +33,7 @@ export default function Timer({displayMinutes, displaySeconds}) {
 
             if(seconds <= 0 )
             {
-                seconds = 3;
+                seconds = 60;
                 --minutes;
             }
 
