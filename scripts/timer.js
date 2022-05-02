@@ -1,4 +1,5 @@
 import { displayMinutes, displaySeconds } from "./elements.js";
+import Sounds from "./sounds.js"
 
 export default function Timer({displayMinutes, displaySeconds}) {
 
@@ -29,6 +30,7 @@ export default function Timer({displayMinutes, displaySeconds}) {
             if(finished){
                 reset();
                 updateDisplay();
+                Sounds().timeEnd();
                 return;
             }
 
