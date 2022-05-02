@@ -7,6 +7,8 @@ export default function(){
     const coffe = new Audio ('audios/Cafeteria.wav');
     
     const fireplace = new Audio ('audios/Lareira.wav');
+    
+    const kitchenTimer = new Audio("https://github.com/maykbrito/automatic-video-creator/blob/master/audios/kichen-timer.mp3?raw=true")
 
     forest.loop = true;
 
@@ -16,11 +18,10 @@ export default function(){
 
     fireplace.loop = true;
 
-    const finalBeep = new Audio("https://github.com/maykbrito/automatic-video-creator/blob/master/audios/kichen-timer.mp3?raw=true");
-    
     function timeEnd(){
-        finalBeep.play();
+        kitchenTimer.play();
     }
+
 
     return{
         forest,
