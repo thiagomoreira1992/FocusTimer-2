@@ -29,6 +29,7 @@ export default function Timer({displayMinutes, displaySeconds}) {
             if(finished){
                 reset();
                 updateDisplay();
+                return;
             }
 
             if(seconds <= 0 )
